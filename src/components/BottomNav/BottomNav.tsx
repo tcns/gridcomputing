@@ -2,10 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import iconGrid from '../../assets/sidebar/grid.svg'
-import iconWifi from '../../assets/sidebar/wifi.svg'
-import iconUser from '../../assets/sidebar/user.svg'
-import iconMedal from '../../assets/sidebar/medal.svg'
-import iconBasket from '../../assets/sidebar/basket.svg'
 import iconNetwork from '../../assets/network/network.svg'
 import './BottomNav.css'
 

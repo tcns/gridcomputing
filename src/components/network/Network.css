@@ -1,3 +1,89 @@
+.Network {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 3rem;
+}
+
+.stats-container {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.stats-table {
+  display: grid;
+  gap: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 1rem;
+  border: 1px solid rgba(234, 88, 12, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.row .col:first-child {
+  font-size: 1.5rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.row .col:last-child {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #64748b;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .Network {
+    padding: 1rem;
+  }
+
+  .page-header {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .stats-container {
+    padding: 1rem;
+  }
+
+  .row {
+    padding: 1.5rem;
+  }
+
+  .row .col:first-child {
+    font-size: 1.25rem;
+  }
+
+  .row .col:last-child {
+    font-size: 2rem;
+  }
+}
 
 @media (max-width: 520px) {
   .Network {

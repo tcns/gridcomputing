@@ -1,12 +1,11 @@
 .bottom-nav {
   display: flex;
-
   justify-content: space-around;
   align-items: center;
-  background-color: #282828;
+  background-color: #ffffff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: 1px solid #030303;
+  border: 1px solid #ea580c;
   margin: 5px;
   position: fixed;
   bottom: 0;
@@ -26,7 +25,7 @@
 }
 
 .bottom-nav a.active {
-  filter: brightness(0) invert(1);
+  filter: brightness(0) saturate(100%) invert(35%) sepia(95%) saturate(1000%) hue-rotate(0deg) brightness(100%) contrast(100%);
   transition: filter 0.3s;
 }
 
@@ -37,10 +36,12 @@
 .bottom-nav-icon {
   width: 20px;
   height: auto;
+  filter: brightness(0) saturate(100%) invert(12%) sepia(5%) saturate(10%);
+  transition: filter 0.3s;
 }
 
 .disabled {
-  color: #a9a9a9;
+  color: #94a3b8;
   pointer-events: none;
   text-decoration: none;
   opacity: 0.5;
@@ -49,11 +50,6 @@
 
 .disabled:hover {
   background-color: transparent;
-}
-
-.bottom-nav-icon {
-  filter: grayscale(100%); /* или просто black при использовании SVG */
-  transition: filter 0.3s; /* добавление анимации, если нужно */
 }
 
 @media (max-width: 768px) {
