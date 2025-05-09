@@ -1,0 +1,76 @@
+.connect-btn {
+  position: relative;
+  background-color: #000000;
+  background: linear-gradient(to top, #ffffff 0%, #070707 21%);
+  color: white;
+  border: 1px solid #030303;
+  border-radius: 18px;
+  padding: 8px 18px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.connect-btn::before {
+  content: 'Connect Wallet';
+  position: absolute;
+  border-radius: 15px;
+  top: 5px;
+  left: 1.9px;
+  right: 1.9px;
+  bottom: 2px;
+  background-color: #000000;
+  z-index: 1;
+}
+
+.account-btn {
+  background-color: #3f951f;
+  color: white;
+  border: 1px solid #030303;
+  border-radius: 18px;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+.chain-btn {
+  display: none;
+}
+
+.account-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-menu img {
+  cursor: pointer;
+}
+.arrow-down img {
+  width: 8px;
+  height: 4px;
+}
+
+.avatar-container {
+  width: 54px;
+  height: 54px;
+  padding: 2px;
+  border: 2px solid #687b89ac;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px 0 35px;
+  overflow: hidden;
+  position: relative;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

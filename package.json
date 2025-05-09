@@ -1,0 +1,49 @@
+{
+  "name": "gridcomputing",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "biome check .",
+    "generate-api": "curl -o src/api/spec.json https://api.gridcomputing.tech/v3/api-docs && openapi-generator-cli generate -i src/api/spec.json -g typescript-axios -o src/api",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.0",
+    "@tanstack/react-query": "5.45.1",
+    "@web3modal/wagmi": "5.1.11",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "dayjs": "^1.11.13",
+    "emoji-dictionary": "^1.0.11",
+    "ethers": "^6.13.4",
+    "gridcomputing": "file:",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "recharts": "^2.13.0",
+    "sass": "^1.80.5",
+    "valtio": "^2.1.0",
+    "viem": "2.21.27",
+    "wagmi": "2.12.19"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@wagmi/cli": "latest",
+    "@zardoy/tsconfig": "1.5.1",
+    "buffer": "^6.0.3",
+    "eslint": "^8.54.0",
+    "eslint-config-zardoy": "^0.2.17",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-valtio": "^0.6.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}

@@ -1,0 +1,78 @@
+.bottom-nav {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  background-color: #282828;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid #030303;
+  margin: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.bottom-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.bottom-nav a.active {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s;
+}
+
+/*.bottom-nav a:hover {
+  border: 1px solid #030303;
+}*/
+
+.bottom-nav-icon {
+  width: 20px;
+  height: auto;
+}
+
+.disabled {
+  color: #a9a9a9;
+  pointer-events: none;
+  text-decoration: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  background-color: transparent;
+}
+
+.bottom-nav-icon {
+  filter: grayscale(100%); /* или просто black при использовании SVG */
+  transition: filter 0.3s; /* добавление анимации, если нужно */
+}
+
+@media (max-width: 768px) {
+  .bottom-nav {
+    padding: 10px 0;
+  }
+
+  .bottom-nav a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bottom-nav-icon {
+    width: 24px;
+  }
+}
+
+@media (min-width: 769px) {
+  .bottom-nav {
+    display: none; /* Скрыть навигацию для более широких экранов */
+  }
+}

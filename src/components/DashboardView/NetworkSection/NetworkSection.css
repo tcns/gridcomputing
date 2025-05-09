@@ -1,0 +1,243 @@
+.network-container {
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.network-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
+}
+
+.network-header p {
+  margin: 0;
+}
+
+.network-container-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.devaice-type {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  background: #f0b25a;
+  padding: 10px 30px;
+  border-radius: 57px;
+}
+
+.devaice-type-mobile {
+  display: none;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  background: #f0b25a;
+  padding: 10px 30px;
+  border-radius: 57px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.network-title {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.network-container .table th,
+.network-container .table td {
+  padding: 22px 10px;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 1.5;
+  border: none;
+}
+
+.network-container .table th {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.network-container .table td {
+  border-bottom: 1px solid #00000036;
+}
+
+.table tr {
+  background: white;
+}
+
+.table td {
+  padding: 8px;
+}
+
+.table-striped tbody {
+  background-color: #ffffff;
+}
+
+.num-col {
+  flex: 1; /* Задаем равное пространство для каждого столбца */
+}
+
+.status-col {
+  flex: 1; /* Задаем равное пространство для каждого столбца */
+}
+
+.name-col {
+  flex: 1; /* Задаем равное пространство для каждого столбца */
+}
+
+.action-col {
+  flex: 1; /* Задаем равное пространство для каждого столбца */
+}
+
+.ip-col {
+  flex: 1; /* Задаем равное пространство для каждого столбца */
+}
+
+.time-col {
+  flex: 1; /* Задаем равное пространство для каждого столбца */
+}
+
+.time-col span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20.65px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.points-col {
+  flex: 1; /* Задаем равное пространство для каждого столбца */
+}
+
+.status-circle {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #030303;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connected {
+  background-color: green;
+}
+
+.disconnected {
+  background-color: #ffa8aa;
+}
+
+.detail-row {
+  background-color: #e7f5fb;
+}
+
+.details {
+  padding: 15px;
+  text-align: left;
+}
+.details span {
+  margin-left: 10px;
+}
+
+.action-col button {
+  padding: 6px 12px;
+  border: 1px solid #070707;
+  border-radius: 18px;
+  background-color: #d3ebdf;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.action-col button:hover {
+  background-color: #c0e0d0;
+}
+
+.table thead th {
+  vertical-align: middle;
+}
+
+.ip-mobile {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14.75px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  display: none;
+  color: #00000083;
+  margin-left: 18px;
+}
+
+.action-col button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .devaice-type-mobile {
+    display: block;
+  }
+  .devaice-type {
+    display: none;
+  }
+  .action-col button {
+    padding: 2px 8px;
+    display: block;
+  }
+
+  .ip-mobile {
+    display: block;
+  }
+
+  .ip-col,
+  .time-col,
+  .num-col,
+  .index-col,
+  .score-col,
+  .points-col {
+    display: none;
+  }
+
+  .network-title {
+    font-size: 16px;
+  }
+
+  .name-col {
+    width: 60%;
+  }
+
+  .status-col {
+    width: 30%;
+  }
+
+  .status-col img {
+    width: 18px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 14px;
+  }
+
+  strong {
+    font-size: 12px;
+  }
+
+  strong span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .num-col {
+    display: none;
+  }
+}
